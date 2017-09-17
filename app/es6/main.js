@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	let a = 4;
 	// scroll menu fixed
 	window.onscroll = function(){
 		var	scrolled = window.pageYOffset || document.documentElement.scrollTop,

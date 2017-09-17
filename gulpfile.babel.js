@@ -60,7 +60,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 			paths.js
 		])
-		.pipe(concat('js/main.js'))
+		.pipe(concat('main.js'))
 		.pipe(gulp.dest(paths.devDir + 'js/'))
 		.pipe(browserSync.stream());
 });
@@ -107,7 +107,7 @@ gulp.task('build', ['clean'], function () {
 // copy images to outputDir
 gulp.task('imgBuild', ['clean'], function() {
 	return gulp.src(paths.devDir + 'img/**/*')
-		.pipe(imagemin('480DKIlZJUpG8I-LDzmYbgta6fLj0Vfg'))
+		.pipe(imagemin('----------------'))
 		.pipe(gulp.dest(paths.outputDir + 'img/'));
 });
 
@@ -120,9 +120,9 @@ gulp.task('fontsBuild', ['clean'], function() {
 //ftp
 gulp.task('send', function() {
 	var conn = ftp.create({
-		host:     '77.120.110.166',
-		user:     'alexlabs',
-		password: 'Arj4h00F9x',
+		host:     '----',
+		user:     '----',
+		password: '----`',
 		parallel: 5
 	});
 
